@@ -36,14 +36,8 @@ function onBubbleClick (event){
     event.target.remove()
 }
 
-
-function placeElement(){
-    let i;
     for (i = 0; i < 100; i++) {
         createBubble()
         createFish()
     }
 
-}
-
-placeElement()
