@@ -3,33 +3,39 @@
 let game = document.getElementsByTagName("game")[0]
 
 function createFish(){
-    let xFish = Math.floor(Math.random() * 100);
-        let yFish = Math.floor(Math.random() * 100);
-        let colorFish = Math.floor(Math.random() * 360);
-
         let fish = document.createElement("fish")
-        fish.style.transform = `translate(${xFish}vw, ${yFish}vh )`
-        fish.style.filter = `hue-rotate(${colorFish}deg)`
-
         game.appendChild(fish)
-        fish.addEventListener('click',function(){
-            fish.classList.add("dead")
-        }
-        )
+
+        let xFish = Math.random() * (window.innerWidth - fish.clientWidth)
+        let yFish = Math.random() * (window.innerHeight - fish.clientHeight)
+        let colorFish = Math.random() * 360
+
+        fish.style.transform = `translate(${xFish}px, ${yFish}px )`
+        fish.style.filter = `hue-rotate(${colorFish}deg)`
+        
+        fish.addEventListener('click',onFishClick)
 }
 
 function createBubble(){
     // bubble element
-    let xBubble = Math.floor(Math.random() * 100);
-    let yBubble = Math.floor(Math.random() * 100);
-
     let bubble = document.createElement("bubble")
-    bubble.style.transform = `translate(${xBubble}vw, ${yBubble}vh )`
     game.appendChild(bubble)
-    bubble.addEventListener('click',function(){
-        bubble.remove()
-    })
+
+    let xBubble = Math.random() * (window.innerWidth - bubble.clientWidth)
+    let yBubble = Math.random() * (window.innerHeight - bubble.clientHeight)
+    bubble.style.transform = `translate(${xBubble}px, ${yBubble}px )`
+    
+    bubble.addEventListener('click',onBubbleClick)
 }
+
+function onFishClick(event){
+    event.target.classList.add("dead")
+}
+
+function onBubbleClick (event){
+    event.target.remove()
+}
+
 
 function placeElement(){
     let i;
