@@ -1,5 +1,6 @@
-// game element
 
+// game element
+let test
 let game = document.getElementsByTagName("game")[0]
 
 function placeElement(){
