@@ -1,0 +1,571 @@
+main{
+     position:absolute;
+     top:6vh;
+     color:white;
+ }
+
+html{
+    background-color: #363636;
+    padding:0;
+    margin:0;
+    font-family: "Arial";
+}
+
+body{
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+}
+
+header{
+    position: absolute;
+    width:100vw;
+    top:0;
+    left:0;
+    height:7vh;
+    background-color: #262626;
+    border-bottom:solid 1px white;
+}
+
+header h1{
+    color:white;
+    position: absolute;
+    left:2vw;
+    margin-top:2vh;
+    margin-left:-2vh;
+    font-size:3vh;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav{
+    width:83vw;
+    position: absolute;
+    padding-top:2vh;
+    left:15vw;
+    top:0;
+    height:5vh;
+    padding-left:3vw;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: #262626;
+    color:white;
+    border-bottom:solid 1px white;
+
+}
+
+posts{
+    position:absolute;
+    width:60vw;
+    left:8vw;
+    top:17vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows:20vh;
+    grid-gap:1vw;
+    color:white;
+    padding-bottom:5vh;
+}
+
+
+post{
+    display: grid;
+    grid-template-columns: 3.5vw 33vh auto ;
+    grid-template-areas:
+            'vote img title'
+            'vote img preview '
+            'vote img view ';
+    color:white;
+    border:solid 1px white;
+    background-color: #262626;
+    border-radius:1vh;
+}
+
+vote{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 60%;
+    grid-area:vote;
+    height:100%;
+    width:100%;
+    background-color: #1c1c1c;
+    border-radius:1vh 0vh 0vh 1vh;
+}
+
+vote img{
+    padding-left:0.75vw;
+    margin-top:1vh;
+    cursor:pointer;
+    height: 4vh;
+    align-self: flex-end;
+}
+
+
+
+post .thumbnail{
+    object-fit: cover;
+    height: 100%;
+    width: 14vw;
+    grid-area: img;
+}
+
+post preview{
+    grid-area:preview;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height:2.5rem;
+    overflow:hidden;
+}
+
+post postTitle{
+    font-weight: bold;
+    width:100%;
+    grid-area:title;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height:1.25rem;
+    overflow:hidden;
+}
+
+post a{
+    grid-area:view;
+}
+
+profile{
+    left:71vw;
+    width:20vw;
+    height:calc(40vh + 1vw);
+    top:17vh;
+    position:absolute;
+    color:white;
+    border:solid 1px white;
+    border-radius: 1vh;
+    background-color: #262626;
+}
+
+
+profilePicture{
+    margin-top:5vh;
+    width:10vw;
+    height:10vw;
+    background-image:url('../images/ghosted.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+actions{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    width:90%;
+    padding:5%;
+    bottom:0;
+    position:absolute;
+    height:8%;
+    text-align: center;
+}
+
+loginMsg{
+    text-align:center;
+    width:100%;
+    position:absolute;
+    top:45%;
+}
+
+.LIactions{
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.LOActions{
+    grid-template-columns: auto auto auto;
+}
+
+
+
+top{
+    left:71vw;
+    width:20vw;
+    top:calc(57vh + 2vw);
+    position:absolute;
+    color:white;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #262626;
+}
+
+top p:first-child{
+    border:solid 1px white;
+    border-radius: 1vh 1vh 0 0;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    text-align: center;
+    margin:0;
+}
+
+topPost{
+    background-size: 100% ;
+    height:10vh;
+    width:calc(100% - 2px);
+    border:solid 1px white;
+}
+
+topPost topTitle{
+    padding-top:10%;
+}
+
+topPost a{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    color:white;
+    background-color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height:1.25rem;
+    overflow:hidden;
+}
+
+article{
+    border:solid 1px white;
+    border-radius:1vh;
+    top:17vh;
+    width:60vw;
+    left:8vw;
+    background-color: #262626;
+    position:absolute;
+    margin-bottom:5vh;
+    display:grid;
+    grid-template-columns: 10% 90%;
+    grid-template-areas:
+            "likes title"
+            "likes image"
+            "likes article";
+}
+
+article h1{
+    padding-left:3vw;
+    grid-area: title;
+}
+
+article h2 {
+    font-weight: normal;
+    font-size: 1.1rem;
+    background-color: #636b6f;
+    padding:3vw;
+    margin-bottom: 0;
+    border-radius: 0 0 1vh 0;
+    grid-area: article;
+    margin-top:0;
+
+}
+
+article postLikes{
+    height:100%;
+    width:100%;
+    grid-area: likes;
+    background-color: #1c1c1c;
+    border-radius: 1vh 0 0 1vh;
+}
+
+postLikes img{
+    width:60%;
+    padding-left:20%;
+    padding-top:20%;
+
+}
+
+article .visual{
+    width:100%;
+    grid-area: image;
+}
+
+filters{
+
+    position:absolute;
+    width:60vw;
+    height:5vh;
+    left:8vw;
+    top:5vh;
+    border:solid 1px white;
+    border-radius:1vh;
+
+}
+
+filters *{
+    float:left;
+}
+
+filters input, filters select{
+    width:20%;
+    height:100%;
+    padding:0;
+    margin:0;
+    border:0;
+    outline: none;
+}
+
+sort {
+    position:absolute;
+    left:56.3vw;
+    height:5vh;
+    width:12vw;
+    top: 11vh;
+    z-index: 100;
+}
+
+sort select{
+    height:100%;
+    width:100%;
+    border-radius: 1vh;
+}
+
+create {
+    width: 55vw;
+    left:7vw;
+    top: 17vh;
+    position: absolute;
+
+    border: solid 1px white;
+    border-radius: 1vh;
+    background-color: #262626;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 2vw;
+    padding-top: 1vw;
+}
+
+create textarea{
+    resize: vertical;
+    height:20vh;
+}
+
+create form{
+    display:grid;
+    grid-template-columns: auto;
+    color:white;
+}
+
+create select{
+    margin-bottom:1.5em;
+}
+
+create p{
+    text-align: center;
+    padding-top:1vh;
+}
+
+likes{
+    width:100%;
+    text-align:center;
+    display:block;
+}
+
+pagenav{
+    width:60vw;
+    left:8vw;
+    position:absolute;
+    text-align:center;
+    top:12vh;
+    height: 7vh;
+}
+
+vote input[type=image]{
+    width:60%;
+    margin-left:20%;
+    margin-top:90%;
+    filter:grayscale(100%);
+}
+
+login,register{
+    position:absolute;
+    padding:2vw;
+    top:17vh;
+    background-color: #262626;
+    border-radius: 1vh;
+    border:solid 1px white;
+    width:15vw;
+    left:42.5vw;
+}
+
+pages, section{
+    position:absolute;
+    background-color: #262626;
+    border-radius: 1vh;
+    border:solid 1px white;
+}
+
+pages{
+    top:10vh;
+    width:40vw;
+    height:7vh;
+    left: 30vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows:5vh;
+    text-align:center;
+    grid-row-gap: 1vh;
+}
+
+pages a {
+    margin-top:2vh;
+}
+
+section{
+    top:19vh;
+    width:40vw;
+    min-height:30vh;
+    left:30vw;
+}
+
+section p, section h1{
+    text-align:center;
+}
+
+#posts{
+    display:grid;
+    grid-template-columns: 85% 15%;
+    grid-row-gap: 3vh;
+}
+
+#posts mutate{
+    color:white;
+    border:solid 1px white;
+    background-color: #262626;
+    border-radius:1vh;
+    display:grid;
+    grid-template-columns: auto;
+    padding-left:20%;
+}
+
+#posts mutate *{
+    cursor:pointer;
+}
+
+myPost{
+    width:100%;
+    height:15vh;
+    border-radius: 1vh;
+    border:solid 1px white;
+    background-size: cover;
+}
+
+myPost a{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 1.25rem;
+    overflow: hidden;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.edit{
+    display:grid;
+    grid-template-columns: 100%;
+}
+
+.edit textarea{
+    resize: vertical;
+}
+
+.edit img{
+    width:100%;
+
+}
+
+#mutate{
+    margin-bottom: 20vh;
+    padding:2vh;
+}
+
+#adminPanel{
+    grid-template-columns: auto auto auto;
+}
+
+user{
+    padding:2vh;
+    background-color: #262626;
+    border-radius: 1vh;
+    border:solid 1px white;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    word-break: break-all;
+}
+
+adminButton{
+
+    position:absolute;
+    bottom:11vh;
+    text-align:center;
+    width:100%;
+}

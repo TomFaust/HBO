@@ -1,0 +1,22 @@
+[2020-7-9 16:55:58] layer "map.png": Duplicate path: map.png
+[2020-7-9 16:55:58] layer "locationpin.png": Duplicate path: locationpin.png
+[2020-7-9 16:55:58] layer "academieplein.png": Duplicate path: academieplein.png
+[2020-7-9 16:55:58] layer "blaak.png": Duplicate path: blaak.png
+[2020-7-9 16:55:58] layer "kralingse zoom.png": Duplicate path: kralingse zoom.png
+[2020-7-9 16:55:58] layer "lloyd straat.png": Duplicate path: lloyd straat.png
+[2020-7-9 16:55:58] layer "max euwelaan.png": Duplicate path: max euwelaan.png
+[2020-7-9 16:55:58] layer "museumpark laagbouw.png": Duplicate path: museumpark laagbouw.png
+[2020-7-9 16:55:58] layer "museumpark hoogbouw.png": Duplicate path: museumpark hoogbouw.png
+[2020-7-9 16:55:58] layer "pieter de hoogweg.png": Duplicate path: pieter de hoogweg.png
+[2020-7-9 16:55:58] layer "posthumalaan.png": Duplicate path: posthumalaan.png
+[2020-7-9 16:55:58] layer "rmd rotterdam.png": Duplicate path: rmd rotterdam.png
+[2020-7-9 16:55:58] layer "rochussenstraat.png": Duplicate path: rochussenstraat.png
+[2020-7-9 16:55:58] layer "wijnhaven 61.png": Duplicate path: wijnhaven 61.png
+[2020-7-9 16:55:58] layer "wijnhaven 99.png": Duplicate path: wijnhaven 99.png
+[2020-7-9 16:55:58] layer "wijnhaven 103.png": Duplicate path: wijnhaven 103.png
+[2020-7-9 16:55:58] layer "wijnhaven 107.png": Duplicate path: wijnhaven 107.png
+[2020-7-9 16:55:58] layer "werner.png copy": Expected end of input but "c" found.
+[2020-7-9 16:55:58] layer "cees.png copy": Expected end of input but "c" found.
+[2020-7-9 16:55:58] layer "zoe.png copy": Expected end of input but "c" found.
+[2020-7-9 16:55:58] layer "loes.png copy": Expected end of input but "c" found.
+[2020-7-9 16:55:58] layer "donna.png copy": Expected end of input but "c" found.
